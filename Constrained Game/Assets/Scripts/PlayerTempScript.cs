@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerTempScript : MonoBehaviour {
+public class PlayerTempScript : PlayerController {
 
 	private Rigidbody2D rb2d;
 
