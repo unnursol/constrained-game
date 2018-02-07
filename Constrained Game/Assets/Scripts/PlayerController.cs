@@ -8,14 +8,13 @@ public class PlayerController : MonoBehaviour {
 
 	private Transform cannon;
 
-	private float downCount;
-	private float upCount;
+	private float cannonMovementCount;
 
 	private float startShootingForce;
 
 	[Header("Player Key Input")]
-	public string cannonDown;
-	public string cannonUp;
+	public string down;
+	public string up;
 	public string shoot;
 
 	[Header("Rotation")]
@@ -35,30 +34,27 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 		rb2d = GetComponent<Rigidbody2D>();
 		cannon = rb2d.gameObject.transform.GetChild (0).GetComponent<Transform> ();
 
-		downCount = 0;
-		upCount = 0;
+		cannonMovementCount = 0;
 
 		startShootingForce = shootingForce;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKey (cannonDown)) {
-			if (downCount != maxDownRotation) {
+		if (Input.GetKey (down)) {
+			if (cannonMovementCount != maxDownRotation) {
 				cannon.Rotate (0, 0, moveDown);
-				downCount += moveDown;
-				upCount -= moveUp;
+				cannonMovementCount += Mathf.Abs(moveDown);
 			}
-		} else if (Input.GetKey (cannonUp)) {
-			if (upCount != maxUpRotation) {
+		} else if (Input.GetKey (up)) {
+			if (cannonMovementCount != maxUpRotation) {
 				cannon.Rotate (0, 0, moveUp);
-				upCount += moveUp;
-				downCount -= moveDown;
+				cannonMovementCount -= Mathf.Abs(moveUp);
 			}
 		} else if (Input.GetKey (shoot)) {
 			IncreaseForce ();
@@ -69,6 +65,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void IncreaseForce () {
+		// This increases the force, needs animation to show force being increased!!
 		if (shootingForce <= maxShootingForce) {
 			shootingForce += 0.1f;
 		}
