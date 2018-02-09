@@ -20,7 +20,7 @@ public class DropSpawn : MonoBehaviour {
 
 		GameObject spawnObj = drops [Random.Range (0, drops.Length)];
 
-		spawnObj = Instantiate (spawnObj, spawnObj.transform.position, Quaternion.identity);
+		Instantiate (spawnObj, spawnObj.transform.position, Quaternion.identity);
 
 		Invoke ("Spawn", Random.Range (spawnMin, spawnMax));
 	}

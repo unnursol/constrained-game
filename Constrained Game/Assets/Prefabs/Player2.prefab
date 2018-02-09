@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 50424997478979030}
   - component: {fileID: 70128784820529896}
   - component: {fileID: 114246886888215238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4830932873623886}
   - component: {fileID: 212115238912270948}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4340527661223198}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PotatoSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,8 +175,8 @@ MonoBehaviour:
   potatoPrefab: {fileID: 1632618673237446, guid: 9127258ed5d70de49a977b5cfc0ab448,
     type: 2}
   potatoSpawn: {fileID: 4340527661223198}
-  minShootingForce: 0
-  maxShootingForce: 10
+  minShootingForce: 3
+  maxShootingForce: 15
   forceText: {fileID: 0}
 --- !u!212 &212115238912270948
 SpriteRenderer:

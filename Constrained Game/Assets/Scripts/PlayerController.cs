@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
-	private Rigidbody2D rb2d;
+	protected Rigidbody2D rb2d;
 
-	private Transform cannon;
+	protected Transform cannon;
 
-	private float cannonMovementCount;
+	protected float cannonMovementCount;
 
-	private float shootingForce;
+	protected float shootingForce;
 
-	private bool increaseForce;
+	protected bool increaseForce;
 
 	[Header("Player Key Input")]
 	public string down;					// Key Input for cannon down

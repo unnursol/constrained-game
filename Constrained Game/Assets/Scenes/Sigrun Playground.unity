@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 527046364}
   - component: {fileID: 527046363}
   - component: {fileID: 527046365}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,6 +1272,16 @@ Prefab:
       propertyPath: forceText
       value: 
       objectReference: {fileID: 777734779}
+    - target: {fileID: 114016176052654018, guid: 60c383c1e15c0914daf5daa99e066879,
+        type: 2}
+      propertyPath: minShootingForce
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114016176052654018, guid: 60c383c1e15c0914daf5daa99e066879,
+        type: 2}
+      propertyPath: maxShootingForce
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60c383c1e15c0914daf5daa99e066879, type: 2}
   m_IsPrefabParent: 0
