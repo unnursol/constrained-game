@@ -49,6 +49,8 @@ public class PlayerTempScript : PlayerController {
 		shootingForce = minShootingForce;
 
 		increaseForce = true;
+
+		forceText.text = "Force: ";
 	}
 
 	// Update is called once per frame
