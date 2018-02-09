@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnMovement : MonoBehaviour {
+public class SpawnObjects : MonoBehaviour {
 
 	private float[] spawnPlacement =  {5.5f, -5.5f};
 	private float placement;
