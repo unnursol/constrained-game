@@ -15,6 +15,7 @@ public class DropSpawn : MonoBehaviour {
 		Spawn ();
 	}
 
+	// Instantiates a given spawn object every 2-4 seconds.
 	void Spawn() {
 
 		GameObject spawnObj = drops [Random.Range (0, drops.Length)];

@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 777734780}
   - component: {fileID: 777734779}
   m_Layer: 5
-  m_Name: Player1
+  m_Name: Player1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 888769398}
   - component: {fileID: 888769397}
   m_Layer: 5
-  m_Name: Player2
+  m_Name: Player2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1267,7 +1267,7 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114192751557489970, guid: 60c383c1e15c0914daf5daa99e066879,
+    - target: {fileID: 114016176052654018, guid: 60c383c1e15c0914daf5daa99e066879,
         type: 2}
       propertyPath: forceText
       value: 
@@ -1388,7 +1388,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114673997197895182, guid: 644b10fe669bae844b0a0979003ac949,
+    - target: {fileID: 114246886888215238, guid: 644b10fe669bae844b0a0979003ac949,
         type: 2}
       propertyPath: forceText
       value: 
@@ -1823,6 +1823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drops:
   - {fileID: 1926017302605598, guid: 6c745ad5193878a449e46d0b866282d4, type: 2}
+  - {fileID: 1429220463686612, guid: 9b19fd5bd5d2f8141a15fa73567b0a99, type: 2}
+  - {fileID: 1116515882906480, guid: 77e0865b28b608c4ebe88ca531159122, type: 2}
   spawnMin: 2
   spawnMax: 4
 --- !u!1 &1937957238

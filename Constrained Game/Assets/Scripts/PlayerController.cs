@@ -49,6 +49,8 @@ public class PlayerController : MonoBehaviour {
 		shootingForce = minShootingForce;
 
 		increaseForce = true;
+
+		forceText.text = "Force: ";
 	}
 
 	// Update is called once per frame
