@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnObjects : MonoBehaviour {
 
-	private float[] spawnPlacement =  {5.5f, -5.5f};
+	private float[] spawnPlacement =  {400f, -400f};
 	private float placement;
 
 	void Awake () {
@@ -14,7 +14,7 @@ public class SpawnObjects : MonoBehaviour {
 	}
 
 	void Fly() {
-		transform.position = Vector3.MoveTowards(transform.position, new Vector3(-placement, transform.position.y, 0), 0.01f);
+		transform.position = Vector3.MoveTowards(transform.position, new Vector3(-placement, transform.position.y, 0), 1f);
 		if (transform.position.x == -placement) {
 			Destroy (gameObject);
 			return;
@@ -23,8 +23,8 @@ public class SpawnObjects : MonoBehaviour {
 	}
 
 	void Fall() {
-		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, -7.2f, 0), 0.01f);
-		if (transform.position.y == 7.2f) {
+		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, -100f, 0), 1f);
+		if (transform.position.y == 100f) {
 			Destroy (gameObject);
 			return;
 		}

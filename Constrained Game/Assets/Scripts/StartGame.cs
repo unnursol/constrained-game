@@ -15,6 +15,7 @@ public class StartGame : MonoBehaviour {
 		Time.timeScale = 0;
 		startGame = false;
 		endGame = false;
+		startScreen.SetActive (true);
 	}
 	
 	// Update is called once per frame

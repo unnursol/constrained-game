@@ -69,8 +69,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1103083291721502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -7.2, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -340, y: -180, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children:
   - {fileID: 4830932873623886}
   m_Father: {fileID: 0}
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -175,8 +175,8 @@ MonoBehaviour:
   potatoPrefab: {fileID: 1632618673237446, guid: 9127258ed5d70de49a977b5cfc0ab448,
     type: 2}
   potatoSpawn: {fileID: 4340527661223198}
-  minShootingForce: 3
-  maxShootingForce: 15
+  minShootingForce: 70
+  maxShootingForce: 400
   forceText: {fileID: 0}
 --- !u!212 &212115238912270948
 SpriteRenderer:
