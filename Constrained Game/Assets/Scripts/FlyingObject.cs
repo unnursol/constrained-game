@@ -25,19 +25,18 @@ public class FlyingObject : MonoBehaviour {
 		Invoke ("Fly", 0.02f);
 	}
 
-	void Fall() {
-		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, -100f, 0), 1f);
-		if (transform.position.y == 100f) {
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.tag == "ammunation") {
+			FlyUp ();
+		}
+	}
+
+	void FlyUp() {
+		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 400f, 0), 1.5f);
+		if (transform.position.y == 400f) {
 			Destroy (gameObject);
 			return;
 		}
-		Invoke ("Fall", 0.02f);
+		Invoke ("FlyUp", 0.02f);
 	}
-
-	void OnTriggerEnter2D(Collider2D other) {
-		if (other.tag == "ammunation") {
-			Fall ();
-		}
-	}
-
 }

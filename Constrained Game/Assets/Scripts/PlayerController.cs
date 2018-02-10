@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     protected List<Renderer> forceCircles;
 
-    protected int forceCirclesCount;
+    protected int forceCirclesCount = 11;
 
     protected Animator anim;
 
@@ -131,19 +132,28 @@ public class PlayerController : MonoBehaviour {
 
     private void ForceIndicatorHandler()
     {
-        var gap = maxShootingForce / forceCirclesCount;
-        
-        if (shootingForce > gap)
+        float gap = maxShootingForce / forceCirclesCount;
+
+        for (int i = 0; i < forceCirclesCount; i++)
         {
-            forceCircles[0].enabled = true;
+            if (shootingForce >= i * gap)
+            {
+                forceCircles[i].enabled = true;
+            }
+            else
+            {
+                forceCircles[i].enabled = false;
+            }
         }
+        
+        
     }
 
 
     private void ForceIndicatorInit()
     {
         forceCircles = new List<Renderer>();
-        for (int i = 0; i < 11; i++)
+        for (int i = 0; i < forceCirclesCount; i++)
         {
             forceCircles.Add(forceIndicator.GetChild(i).GetComponent<Renderer>());
         } 
