@@ -9,6 +9,9 @@ public class SpawnObjects : MonoBehaviour {
 
 	void Awake () {
 		placement = spawnPlacement [Random.Range (0, spawnPlacement.Length)];
+		SpriteRenderer sr = GetComponent<SpriteRenderer> ();
+		if (placement < 0)
+			sr.flipX = true;
 		transform.Translate (placement, 0, 0);
 		Fly ();
 	}
