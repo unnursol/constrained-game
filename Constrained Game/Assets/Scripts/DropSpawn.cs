@@ -7,6 +7,15 @@ public class DropSpawn : MonoBehaviour {
 	[Header("Drop Prefabs")]
 	public GameObject[] drops;
 
+	[Header("Bird bags")]
+	public GameObject[] bags;
+
+	[Header("Balloon crates")]
+	public GameObject[] balloonCrates;
+
+	[Header("Drone crates")]
+	public GameObject[] DroneCrates;
+
 	public float spawnMin = 2f;
 	public float spawnMax = 4f;
 
