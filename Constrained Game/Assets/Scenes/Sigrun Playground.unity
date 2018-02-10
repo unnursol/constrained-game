@@ -1854,6 +1854,7 @@ GameObject:
   - component: {fileID: 1727206418}
   - component: {fileID: 1727206420}
   - component: {fileID: 1727206419}
+  - component: {fileID: 1727206421}
   m_Layer: 5
   m_Name: End Screen
   m_TagString: Untagged
@@ -1913,6 +1914,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1727206417}
+--- !u!114 &1727206421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727206417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d66c7619ff0c794fa49298916f9ffc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1762283688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,6 +2032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startScreen: {fileID: 926641471}
+  endScreen: {fileID: 1727206417}
 --- !u!1 &1899820514
 GameObject:
   m_ObjectHideFlags: 0
