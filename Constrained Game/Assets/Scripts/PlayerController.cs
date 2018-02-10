@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour {
 	void IncreaseForce () {
 		// This increases the force, needs animation to show force being increased!!
 		if (shootingForce <= maxShootingForce)
-			shootingForce += 2f;
+			shootingForce += 5f;
 		else
 			increaseForce = false;
 	}
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour {
 	void DecreaseForce () {
 		// This decreses the force, needs animation to show force being decreased!!
 		if (shootingForce >= minShootingForce)
-			shootingForce -= 2f;
+			shootingForce -= 5f;
 		else
 			increaseForce = true;
 	}

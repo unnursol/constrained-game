@@ -162,7 +162,7 @@ MonoBehaviour:
   potatoPrefab: {fileID: 1632618673237446, guid: 9127258ed5d70de49a977b5cfc0ab448,
     type: 2}
   potatoSpawn: {fileID: 4083518992267860}
-  minShootingForce: 70
+  minShootingForce: 0
   maxShootingForce: 400
   forceText: {fileID: 0}
 --- !u!212 &212473260223556204
