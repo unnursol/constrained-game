@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject potatoPrefab;
 	public Transform potatoSpawn;		// Potato prefab should be attached to the end of the gun
 
-    [Header("Weapon")]
+    [Header("Weapons")]
     public Transform cannon;
 
     [Header("Shooting Force")]
