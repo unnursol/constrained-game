@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour {
 
 	protected bool increaseForce;
 
+    protected List<Renderer> forceCircles;
+
+    protected int forceCirclesCount;
+
     protected Animator anim;
 
 	[Header("Player Key Input")]
@@ -39,8 +43,9 @@ public class PlayerController : MonoBehaviour {
     [Header("Shooting Force")]
 	public float minShootingForce;
 	public float maxShootingForce;
+    public Transform forceIndicator;
 
-	[Header("Force Text UI")]
+    [Header("Force Text UI")]
 	public Text forceText;				// This is temporary to see the force of the shooting, change with animation later
 
 	// Use this for initialization
@@ -57,11 +62,17 @@ public class PlayerController : MonoBehaviour {
 
 		forceText.text = "Force: ";
 
+	    ForceIndicatorInit();
+
         anim = cannon.GetComponent<Animator>();
 	}
 
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+	void Update ()
+	{
+
+	    ForceIndicatorHandler();
 
 		if (Input.GetKey (down)) {
 			if (cannonMovementCount != maxDownRotation) {
@@ -85,7 +96,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	void IncreaseForce () {
+    void IncreaseForce () {
 		// This increases the force, needs animation to show force being increased!!
 		if (shootingForce <= maxShootingForce)
 			shootingForce += 5f;
@@ -117,4 +128,24 @@ public class PlayerController : MonoBehaviour {
 		// Destroy the potato after 5 seconds
 		Destroy(potato, 5.0f);
 	}
+
+    private void ForceIndicatorHandler()
+    {
+        var gap = maxShootingForce / forceCirclesCount;
+        
+        if (shootingForce > gap)
+        {
+            forceCircles[0].enabled = true;
+        }
+    }
+
+
+    private void ForceIndicatorInit()
+    {
+        forceCircles = new List<Renderer>();
+        for (int i = 0; i < 11; i++)
+        {
+            forceCircles.Add(forceIndicator.GetChild(i).GetComponent<Renderer>());
+        } 
+    }
 }
