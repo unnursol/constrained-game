@@ -1997,6 +1997,7 @@ MonoBehaviour:
   - {fileID: 1116515882906480, guid: 77e0865b28b608c4ebe88ca531159122, type: 2}
   - {fileID: 1926017302605598, guid: 83c26c171dbf03942b2715ce860d8e57, type: 2}
   - {fileID: 1926017302605598, guid: 9f9a1bf46f74fe74490bb1dd3a9ede9a, type: 2}
+  - {fileID: 1429220463686612, guid: 2dee28c1af59a044b88c03cc34c69c9a, type: 2}
   spawnMin: 2
   spawnMax: 4
 --- !u!1 &1937957238
