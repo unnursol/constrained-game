@@ -32,8 +32,11 @@ public class PlayerController : MonoBehaviour {
 	public Transform potatoSpawn;		// Potato prefab should be attached to the end of the gun
 
 	[Header("Shooting Force")]
+	public float forceIncrementPerSecond;
 	public float minShootingForce;
 	public float maxShootingForce;
+	public float secondsAtMaxForce;
+	private float currentSecondsAtMaxForce;
 
 	[Header("Force Text UI")]
 	public Text forceText;				// This is temporary to see the force of the shooting, change with animation later
@@ -51,6 +54,8 @@ public class PlayerController : MonoBehaviour {
 		increaseForce = true;
 
 		forceText.text = "Force: ";
+
+		currentSecondsAtMaxForce = secondsAtMaxForce;
 	}
 
 	// Update is called once per frame
@@ -80,16 +85,22 @@ public class PlayerController : MonoBehaviour {
 
 	void IncreaseForce () {
 		// This increases the force, needs animation to show force being increased!!
-		if (shootingForce <= maxShootingForce)
-			shootingForce += 5f;
-		else
-			increaseForce = false;
+		if (shootingForce <= maxShootingForce) {
+			currentSecondsAtMaxForce = secondsAtMaxForce;
+			shootingForce += forceIncrementPerSecond * Time.deltaTime;
+		}
+		else if (currentSecondsAtMaxForce > 0f) {
+			currentSecondsAtMaxForce -= Time.deltaTime;
+			if (currentSecondsAtMaxForce < 0f) {
+				increaseForce = false;	
+			}
+		}
 	}
 
 	void DecreaseForce () {
 		// This decreses the force, needs animation to show force being decreased!!
 		if (shootingForce >= minShootingForce)
-			shootingForce -= 5f;
+			shootingForce -= forceIncrementPerSecond * Time.deltaTime;
 		else
 			increaseForce = true;
 	}
