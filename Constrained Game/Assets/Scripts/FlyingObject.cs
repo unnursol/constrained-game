@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnObjects : MonoBehaviour {
+public class FlyingObject : MonoBehaviour {
 
 	private float[] spawnPlacement =  {400f, -400f};
 	private float placement;
