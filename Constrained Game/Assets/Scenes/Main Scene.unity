@@ -2072,6 +2072,12 @@ MonoBehaviour:
   - {fileID: 1926017302605598, guid: 83c26c171dbf03942b2715ce860d8e57, type: 2}
   - {fileID: 1926017302605598, guid: 9f9a1bf46f74fe74490bb1dd3a9ede9a, type: 2}
   - {fileID: 1429220463686612, guid: 2dee28c1af59a044b88c03cc34c69c9a, type: 2}
+  bags:
+  - {fileID: 1110191373706656, guid: 3a07f4fc54126f542bc348002c41d7fe, type: 2}
+  balloonCrates:
+  - {fileID: 1323339183840782, guid: 494afbc6f9fb96d4d8ece21efb3a8d20, type: 2}
+  DroneCrates:
+  - {fileID: 1323339183840782, guid: 43267ac2798a2ad49860f8ca76f2b9eb, type: 2}
   spawnMin: 4
   spawnMax: 6
 --- !u!1 &1937957238
