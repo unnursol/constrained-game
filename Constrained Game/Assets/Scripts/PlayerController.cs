@@ -7,13 +7,15 @@ public class PlayerController : MonoBehaviour {
 
 	protected Rigidbody2D rb2d;
 
-	protected Transform cannon;
+    //protected Transform cannon;
 
-	protected float cannonMovementCount;
+    protected float cannonMovementCount;
 
 	protected float shootingForce;
 
 	protected bool increaseForce;
+
+    protected Animator anim;
 
 	[Header("Player Key Input")]
 	public string down;					// Key Input for cannon down
@@ -31,7 +33,10 @@ public class PlayerController : MonoBehaviour {
 	public GameObject potatoPrefab;
 	public Transform potatoSpawn;		// Potato prefab should be attached to the end of the gun
 
-	[Header("Shooting Force")]
+    [Header("Weapon")]
+    public Transform cannon;
+
+    [Header("Shooting Force")]
 	public float minShootingForce;
 	public float maxShootingForce;
 
@@ -42,7 +47,7 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 
 		rb2d = GetComponent<Rigidbody2D>();
-		cannon = rb2d.gameObject.transform.GetChild (0).GetComponent<Transform> ();
+		//cannon = rb2d.gameObject.transform.GetChild (0).GetComponent<Transform> ();
 
 		cannonMovementCount = 0;
 
@@ -51,6 +56,8 @@ public class PlayerController : MonoBehaviour {
 		increaseForce = true;
 
 		forceText.text = "Force: ";
+
+        anim = cannon.GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
@@ -95,6 +102,9 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Fire() {
+        
+        anim.SetTrigger("Shoot");
+
 		// Create the Potato from the Potato Prefab
 		var potato = (GameObject)Instantiate (
 			potatoPrefab,
