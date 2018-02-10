@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4139391221841402}
   - component: {fileID: 61371273291357140}
   - component: {fileID: 50565134298802218}
-  - component: {fileID: 114658691816414562}
   - component: {fileID: 95359728288072744}
   - component: {fileID: 212461830315324520}
+  - component: {fileID: 114810373543953792}
   m_Layer: 0
   m_Name: Black Bird
   m_TagString: Untagged
@@ -106,7 +106,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114658691816414562
+--- !u!114 &114810373543953792
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1926017302605598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe1c15a2d346a440940d88e060a9bd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 552e73b0f203c714f8f18f999c42cb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212461830315324520
@@ -151,7 +151,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4e0dc4a67a1bb3342b47a440f89d16cf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1992c695911f574b8742fe15a139f77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
