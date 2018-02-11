@@ -51,7 +51,7 @@ public class StartGame : MonoBehaviour {
     private void UpdateTimer()
     {
         float t = Time.time - startTime;
-        if (t >= 2)
+        if (t >= 120)
         {
             Time.timeScale = 0;
             winGame = true;
