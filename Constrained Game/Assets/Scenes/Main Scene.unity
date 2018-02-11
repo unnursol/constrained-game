@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.487783, g: 0.32546228, b: 0.5165332, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -325,11 +325,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4692782748263782, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4535358976314970, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 212053607693343672, guid: 69c22af2d8d03a1419c3db706b03f96e,
         type: 2}
@@ -338,11 +338,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4392865515936832, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4458034187164512, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 212131291355918618, guid: 69c22af2d8d03a1419c3db706b03f96e,
         type: 2}
@@ -424,6 +424,30 @@ Prefab:
         type: 2}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844705137175204, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681530189148522, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4345001226758236, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121789955016984, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366682917268230, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336894943812168, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 66759165921024224, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
@@ -2023,6 +2047,82 @@ PolygonCollider2D:
       - {x: 0.08, y: -0.505}
       - {x: 0.08, y: 0.505}
       - {x: -0.08, y: 0.505}
+--- !u!1 &1288080392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1927252209277010, guid: 69c22af2d8d03a1419c3db706b03f96e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1288080393}
+  - component: {fileID: 1288080394}
+  m_Layer: 0
+  m_Name: sky-backdrop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1288080393
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4345001226758236, guid: 69c22af2d8d03a1419c3db706b03f96e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288080392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.25, z: 0}
+  m_LocalScale: {x: 12, y: 12, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1647304714}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1288080394
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 212017764349595148, guid: 69c22af2d8d03a1419c3db706b03f96e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288080392}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 47420ce50174b464fa0f0e638d2539b6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.4, y: 0.66}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &1421806586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,6 +2550,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1586923151}
+--- !u!4 &1647304714 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e,
+    type: 2}
+  m_PrefabInternal: {fileID: 4950153}
 --- !u!1 &1727206417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2637,8 +2742,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97b1b8a077f22c4ea28e5d140d941be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  startTime: 0
   startScreen: {fileID: 926641471}
   endScreen: {fileID: 1727206417}
+  winScreen: {fileID: 0}
 --- !u!1 &1803884340
 GameObject:
   m_ObjectHideFlags: 0
