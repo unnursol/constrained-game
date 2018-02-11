@@ -28,11 +28,17 @@ public class FlyingObject : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "ammunation") {
 			FlyUp ();
+			Destroy (other.gameObject);
 		}
 	}
 
 	void FlyUp() {
+		if (transform.childCount > 0) {
+			Destroy (transform.GetChild (0).gameObject);
+		}
+
 		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 400f, 0), 1.5f);
+
 		if (transform.position.y == 400f) {
 			Destroy (gameObject);
 			return;
