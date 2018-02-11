@@ -16,12 +16,13 @@ public class DropSpawn : MonoBehaviour {
 	[Header("Drone crates")]
 	public GameObject[] DroneCrates;
 
-	public float spawnMin = 2f;
-	public float spawnMax = 4f;
+	public float spawnMin;
+	public float spawnMax;
+	public float secondsBetweenSpawn;
 
 	// Use this for initialization
 	void Start () {
-		Spawn ();
+		StartCoroutine (spawn ());
 	}
 
 	// Instantiates a given spawn object every 2-4 seconds.
@@ -32,5 +33,13 @@ public class DropSpawn : MonoBehaviour {
 		Instantiate (spawnObj, spawnObj.transform.position, Quaternion.identity);
 
 		Invoke ("Spawn", Random.Range (spawnMin, spawnMax));
+	}
+
+	private IEnumerator spawn(){
+		while (true) {
+			yield return new WaitForSeconds (secondsBetweenSpawn);
+			GameObject spawnObj = drops [Random.Range (0, drops.Length)];
+			Instantiate (spawnObj, spawnObj.transform.position, Quaternion.identity);
+		}
 	}
 }
