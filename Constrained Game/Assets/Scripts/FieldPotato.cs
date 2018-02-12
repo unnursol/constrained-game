@@ -18,8 +18,6 @@ public class FieldPotato : MonoBehaviour {
 	}
 
 	void Update(){
-		Debug.Log (lastUpdate);
-		Debug.Log (Time.time);
 		if (lastUpdate <= Time.time - growUpdateTime) {
 			levelUp ();
 		}
