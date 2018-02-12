@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 4616763065863854}
   - component: {fileID: 212062004165849488}
   - component: {fileID: 95779212292394904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CannonHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526,7 +526,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1074940017963974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28, y: -18, z: 0}
+  m_LocalPosition: {x: -28, y: -18, z: -3}
   m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children:
   - {fileID: 4412601876904282}
@@ -683,7 +683,7 @@ MonoBehaviour:
   maxUpRotation: -40
   maxDownRotation: 120
   move: -1
-  potatoPrefab: {fileID: 1632618673237446, guid: 9127258ed5d70de49a977b5cfc0ab448,
+  potatoPrefab: {fileID: 1632618673237446, guid: 455bef01ebb35cd42bd099cc607a3d3a,
     type: 2}
   potatoSpawn: {fileID: 4155562237046200}
   forceIncrementPerSecond: 90
