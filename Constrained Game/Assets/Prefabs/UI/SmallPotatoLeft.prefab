@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50577836509718786}
   - component: {fileID: 58774603508252586}
   m_Layer: 5
-  m_Name: SmallPotato
+  m_Name: SmallPotatoLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
