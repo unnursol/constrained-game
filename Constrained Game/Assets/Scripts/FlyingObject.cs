@@ -44,12 +44,19 @@ public class FlyingObject : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "ammunation1") {
+			if (GetComponent<AudioSource> ()) {
+				GetComponent<AudioSource> ().Play ();
+			}
 			FlyUp ();
+
             gameController.player1score++;
             Destroy (other.gameObject);	    
 		}
         else if(other.tag == "ammunation2")
 	    {
+			if (GetComponent<AudioSource> ()) {
+				GetComponent<AudioSource> ().Play ();
+			}
 	        FlyUp();
             gameController.player2score++;
             Destroy(other.gameObject);	        
