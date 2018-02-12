@@ -9,6 +9,10 @@ TagManager:
   - ammunation1
   - potatoFarmingLeft
   - potatoFarmingRight
+  - player
+  - water
+  - bag
+  - shovel
   layers:
   - Default
   - TransparentFX

@@ -49,7 +49,19 @@ public class FlyingObject : MonoBehaviour {
 			}
 			FlyUp ();
 
-            gameController.player1score++;
+            if(tag == "bag")
+            {
+                gameController.HarvestPotato(1);
+            }
+            else if(tag == "shovel")
+            {
+                gameController.HarvestPotatoes(1);
+            }
+            else if(tag == "water")
+            {
+                gameController.WaterPotatoes(1);
+            }
+            
             Destroy (other.gameObject);	    
 		}
         else if(other.tag == "ammunation2")
@@ -58,7 +70,21 @@ public class FlyingObject : MonoBehaviour {
 				GetComponent<AudioSource> ().Play ();
 			}
 	        FlyUp();
-            gameController.player2score++;
+            gameController.p2score++;
+
+            if (tag == "bag")
+            {
+                gameController.HarvestPotato(2);
+            }
+            else if (tag == "shovel")
+            {
+                gameController.HarvestPotatoes(1);
+            }
+            else if (tag == "water")
+            {
+                gameController.WaterPotatoes(1);
+            }
+
             Destroy(other.gameObject);	        
 	    }
 	}

@@ -159,8 +159,6 @@ public class PlayerController : MonoBehaviour {
                 forceCircles[i].enabled = false;
             }
         }
-        
-        
     }
 
 
@@ -172,5 +170,4 @@ public class PlayerController : MonoBehaviour {
             forceCircles.Add(forceIndicator.GetChild(i).GetComponent<Renderer>());
         } 
     }
-
 }

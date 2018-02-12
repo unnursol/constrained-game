@@ -17,14 +17,20 @@ public class GameController : MonoBehaviour
     public float startTime;
 
 
-    [Header("Player Variables")]
-    public int player1score;
-    public int player2score;
+    [Header("Score")]
+    public int p1score;
+    public int p2score;
     public Text p1ScoreText;
     public Text p2ScoreText;
+
+    [Header("Farming")]
     public Transform p1Bag;
     public Transform p2Bag;
     public GameObject smallPotato;
+
+    public GameObject p1crops;
+    public GameObject p2crops;
+
 
 
     [Header("Win Screen Variables")]
@@ -44,8 +50,8 @@ public class GameController : MonoBehaviour
         startGame = false;
         endGame = false;
         winGame = false;
-        player1score = 0;
-        player2score = 0;
+        p1score = 0;
+        p2score = 0;
         startScreen.SetActive(true);
     }
 
@@ -68,8 +74,8 @@ public class GameController : MonoBehaviour
         }
         UpdateTimer();
 
-        p1ScoreText.text = player1score.ToString();
-        p2ScoreText.text = player2score.ToString();
+        p1ScoreText.text = p1score.ToString();
+        p2ScoreText.text = p2score.ToString();
 
     }
 
@@ -78,13 +84,22 @@ public class GameController : MonoBehaviour
         if(player == 1)
         {
             Instantiate(smallPotato, p1Bag);
-            player1score++;
+            p1score++;
         }
         else if(player == 2)
         {
             Instantiate(smallPotato, p2Bag);
-            player2score++;
+            p2score++;
         }
+    }
+
+    public void HarvestPotatoes(int player)
+    {
+
+    }
+
+    public void WaterPotatoes(int player)
+    {
 
     }
 
@@ -124,7 +139,7 @@ public class GameController : MonoBehaviour
 
     private void UpdateWinner()
     {
-        if(player2score == player1score)
+        if(p2score == p1score)
         {
             winner.text = "IT'S A DRAW!";
             message.text = "Neither of you managed to gain the upper hand and are therefore forced to compete in price, " +
@@ -134,19 +149,19 @@ public class GameController : MonoBehaviour
         else
         {
             string looser = "";
-            if (player2score > player1score)
+            if (p2score > p1score)
             {
                 winner.text = "WINNER IS: PLAYER 1!";
                 looser = "player 2";
             }
-            else if (player2score < player1score)
+            else if (p2score < p1score)
             {
                 winner.text = "WINNER IS: PLAYER 2!";
                 looser = "Player 1";
             }
             message.text = "You have the upper hand and control the market price of potatoes, lowering it until " + looser + " goes out of business. " +
                            "You now have potato monopoly and make millions! " +
-                           "" + looser + "'s asks you for a job which you happily give him....as a butler.";
+                           "" + looser + " asks you for a job which you happily give him.... as a butler.";
         }     
     }
 }
