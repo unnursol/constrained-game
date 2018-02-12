@@ -37,9 +37,9 @@ public class FlyingObject : MonoBehaviour {
 			Destroy (transform.GetChild (0).gameObject);
 		}
 
-		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 400f, 0), 1.5f);
+		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 30f, 0), 0.2f);
 
-		if (transform.position.y == 400f) {
+		if (transform.position.y == 30f) {
 			Destroy (gameObject);
 			return;
 		}
