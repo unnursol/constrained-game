@@ -16,6 +16,10 @@ public class StartGame : MonoBehaviour
     public Text timerText;
     public float startTime;
 
+    public int player1score;
+    public int player2score;
+    public Text p1ScoreText;
+    public Text p2ScoreText;
 
     public GameObject startScreen;
     public GameObject endScreen;
@@ -29,6 +33,8 @@ public class StartGame : MonoBehaviour
         startGame = false;
         endGame = false;
         winGame = false;
+        player1score = 0;
+        player2score = 0;
         startScreen.SetActive(true);
     }
 
@@ -50,6 +56,9 @@ public class StartGame : MonoBehaviour
             Time.timeScale = 0;
         }
         UpdateTimer();
+
+        p1ScoreText.text = player1score.ToString();
+        p2ScoreText.text = player2score.ToString();
 
     }
 
