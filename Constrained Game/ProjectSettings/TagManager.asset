@@ -7,6 +7,8 @@ TagManager:
   - ammunation
   - ammunation2
   - ammunation1
+  - potatoFarmingLeft
+  - potatoFarmingRight
   layers:
   - Default
   - TransparentFX

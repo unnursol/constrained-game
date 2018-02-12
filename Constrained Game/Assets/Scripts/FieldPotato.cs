@@ -12,6 +12,7 @@ public class FieldPotato : MonoBehaviour {
 	public float growUpdateTime;
 	private float lastUpdate;
     private GameController gameController;
+    private Collider2D collider;
 
     void Start(){
 
@@ -25,6 +26,8 @@ public class FieldPotato : MonoBehaviour {
             Debug.Log("Cannot find 'GameController' script");
         }
 
+        collider = GetComponent<Collider2D>();
+
         maxLevel = potatoes.Length;
 		lastUpdate = Time.time;
 	}
@@ -33,6 +36,14 @@ public class FieldPotato : MonoBehaviour {
 		if (lastUpdate <= Time.time - growUpdateTime) {
 			levelUp ();
 		}
+        if(level == 0 && collider.enabled)
+        {
+            collider.enabled = false;
+        }
+        else if(level > 0 && !collider.enabled)
+        {
+            collider.enabled = true;
+        }
 	}
 
 	public void levelUp(){
