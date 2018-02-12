@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 212286430765905890}
   - component: {fileID: 70626825880631516}
   - component: {fileID: 114792278071707914}
+  - component: {fileID: 95893409010132442}
   m_Layer: 8
   m_Name: FarmerGirl
   m_TagString: Untagged
@@ -631,6 +632,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95893409010132442
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074940017963974}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68b1c2db79d5e6e46987c23d26542e30, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!111 &111061546720346236
 Animation:
   m_ObjectHideFlags: 1
@@ -970,7 +988,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: dbd98c0ddfc73514b9a36aa83938a2d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9a595f00adb0714cad1543186507006, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
