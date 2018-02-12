@@ -172,4 +172,5 @@ public class PlayerController : MonoBehaviour {
             forceCircles.Add(forceIndicator.GetChild(i).GetComponent<Renderer>());
         } 
     }
+
 }

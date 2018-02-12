@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50431333060299338}
   m_Layer: 0
   m_Name: Potato1
-  m_TagString: ammunation2
+  m_TagString: ammunation1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

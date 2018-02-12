@@ -20,6 +20,10 @@ public class GameController : MonoBehaviour
     public int player2score;
     public Text p1ScoreText;
     public Text p2ScoreText;
+    public Transform p1Bag;
+    public Transform p2Bag;
+    public GameObject smallPotato;
+
 
     public GameObject startScreen;
     public GameObject endScreen;
@@ -59,6 +63,21 @@ public class GameController : MonoBehaviour
 
         p1ScoreText.text = player1score.ToString();
         p2ScoreText.text = player2score.ToString();
+
+    }
+
+    public void HarvestPotato(int player)
+    {
+        if(player == 1)
+        {
+            Instantiate(smallPotato, p1Bag);
+            player1score++;
+        }
+        else if(player == 2)
+        {
+            Instantiate(smallPotato, p2Bag);
+            player2score++;
+        }
 
     }
 

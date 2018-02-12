@@ -13,6 +13,7 @@ public class FieldPotato : MonoBehaviour {
 	private float lastUpdate;
     private GameController gameController;
     private Collider2D collider;
+    private int player;
 
     void Start(){
 
@@ -27,6 +28,16 @@ public class FieldPotato : MonoBehaviour {
         }
 
         collider = GetComponent<Collider2D>();
+
+        if(transform.parent.tag == "potatoFarmingRight")
+        {
+            player = 1;
+        }
+
+        else if(transform.parent.tag == "potatoFarmingLeft")
+        {
+            player = 2;
+        }
 
         maxLevel = potatoes.Length;
 		lastUpdate = Time.time;
@@ -43,6 +54,11 @@ public class FieldPotato : MonoBehaviour {
         else if(level > 0 && !collider.enabled)
         {
             collider.enabled = true;
+        }
+
+        if(level == maxLevel)
+        {
+            Harvest();
         }
 	}
 
@@ -64,17 +80,29 @@ public class FieldPotato : MonoBehaviour {
 		}
 	}
 
+    public void levelZero()
+    {
+        level = 0;
+        spriteRenderer.sprite = null;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "ammunation1" && transform.parent.tag == "potatoFarmingLeft")
+        if (other.tag == "ammunation1" && player == 2)
         {
-            levelDown();
+            levelZero();
             Destroy(other.gameObject);
         }
-        else if (other.tag == "ammunation2" && transform.parent.tag == "potatoFarmingRight")
+        else if (other.tag == "ammunation2" && player == 1)
         {
-            levelDown();
+            levelZero();
             Destroy(other.gameObject);
         }
+    }
+
+    void Harvest()
+    {
+        gameController.HarvestPotato(player);
+        levelZero();
     }
 }
