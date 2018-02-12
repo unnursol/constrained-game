@@ -135,6 +135,8 @@ public class PlayerController : MonoBehaviour {
 			potatoSpawn.position,
 			cannon.rotation);
 
+		GetComponent<AudioSource> ().Play ();
+
 		// Add velocity to the potato
 		potato.GetComponent<Rigidbody2D>().velocity = potato.transform.up * shootingForce;
 
