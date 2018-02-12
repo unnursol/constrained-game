@@ -11,9 +11,21 @@ public class FieldPotato : MonoBehaviour {
 	private int maxLevel;
 	public float growUpdateTime;
 	private float lastUpdate;
+    private GameController gameController;
 
-	void Start(){
-		maxLevel = potatoes.Length;
+    void Start(){
+
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+        if (gameController == null)
+        {
+            Debug.Log("Cannot find 'GameController' script");
+        }
+
+        maxLevel = potatoes.Length;
 		lastUpdate = Time.time;
 	}
 
@@ -40,10 +52,20 @@ public class FieldPotato : MonoBehaviour {
 			spriteRenderer.sprite = potatoes [level - 1];
 		}
 	}
-	void OnTriggerEnter2D(Collider2D other) {
-		if (other.tag == "ammunation") {
-			Destroy (other.gameObject);
-			levelDown ();
-		}
-	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "ammunation1")
+        {
+            Debug.Log("HIT HIT");
+            levelDown();
+            Destroy(other.gameObject);
+        }
+        else if (other.tag == "ammunation2")
+        {
+            Debug.Log("HIT HIT");
+            levelDown();
+            Destroy(other.gameObject);
+        }
+    }
 }

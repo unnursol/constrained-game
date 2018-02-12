@@ -10,8 +10,6 @@ public class FlyingObject : MonoBehaviour {
 	private float[] spawnPlacement =  {40f, -40f};
 	private float placement;
     private GameController gameController;
-    // public Text P1ScoreText;
-    // public Text P2ScoreText;
 
     void Awake ()
     {
@@ -45,20 +43,14 @@ public class FlyingObject : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-	    int score = 0;
 		if (other.tag == "ammunation1") {
 			FlyUp ();
-            // score = Int32.Parse(P1ScoreText.text);
-            // P1ScoreText.text = (score++).ToString();
             gameController.player1score++;
-
             Destroy (other.gameObject);	    
 		}
         else if(other.tag == "ammunation2")
 	    {
 	        FlyUp();
-            // score = Int32.Parse(P2ScoreText.text);
-            // P2ScoreText.text = (score++).ToString();
             gameController.player2score++;
             Destroy(other.gameObject);	        
 	    }
