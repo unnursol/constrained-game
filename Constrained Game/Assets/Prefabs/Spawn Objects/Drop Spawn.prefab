@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1701238096365546}
+  m_IsPrefabParent: 1
+--- !u!1 &1701238096365546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4219829446101056}
+  - component: {fileID: 114907044673949842}
+  m_Layer: 0
+  m_Name: Drop Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4219829446101056
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1701238096365546}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -5.02048, z: 0}
+  m_LocalScale: {x: 120, y: 120, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114907044673949842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1701238096365546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f8399f379a7b4bbc0bba91a8342f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - {fileID: 1926017302605598, guid: 6c745ad5193878a449e46d0b866282d4, type: 2}
+  - {fileID: 1429220463686612, guid: 9b19fd5bd5d2f8141a15fa73567b0a99, type: 2}
+  - {fileID: 1116515882906480, guid: 77e0865b28b608c4ebe88ca531159122, type: 2}
+  - {fileID: 1926017302605598, guid: 83c26c171dbf03942b2715ce860d8e57, type: 2}
+  - {fileID: 1926017302605598, guid: 9f9a1bf46f74fe74490bb1dd3a9ede9a, type: 2}
+  - {fileID: 1429220463686612, guid: 2dee28c1af59a044b88c03cc34c69c9a, type: 2}
+  spawnMin: 4
+  spawnMax: 6
+  secondsBetweenSpawn: 3
