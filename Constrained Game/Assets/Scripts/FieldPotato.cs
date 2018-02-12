@@ -66,15 +66,13 @@ public class FieldPotato : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "ammunation1")
+        if (other.tag == "ammunation1" && transform.parent.tag == "potatoFarmingLeft")
         {
-            Debug.Log("HIT HIT");
             levelDown();
             Destroy(other.gameObject);
         }
-        else if (other.tag == "ammunation2")
+        else if (other.tag == "ammunation2" && transform.parent.tag == "potatoFarmingRight")
         {
-            Debug.Log("HIT HIT");
             levelDown();
             Destroy(other.gameObject);
         }
