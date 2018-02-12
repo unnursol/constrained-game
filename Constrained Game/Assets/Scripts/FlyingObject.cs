@@ -1,13 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class FlyingObject : MonoBehaviour {
 
 	private float[] spawnPlacement =  {40f, -40f};
 	private float placement;
+    // public Text P1ScoreText;
+    // public Text P2ScoreText;
 
-	void Awake () {
+    void Awake ()
+    {
 		placement = spawnPlacement [Random.Range (0, spawnPlacement.Length)];
 		SpriteRenderer sr = GetComponent<SpriteRenderer> ();
 		if (placement < 0)
@@ -25,11 +31,23 @@ public class FlyingObject : MonoBehaviour {
 		Invoke ("Fly", 0.02f);
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
-		if (other.tag == "ammunation") {
+	void OnTriggerEnter2D(Collider2D other)
+	{
+	    int score = 0;
+		if (other.tag == "ammunation1") {
 			FlyUp ();
-			Destroy (other.gameObject);
+		    // score = Int32.Parse(P1ScoreText.text);
+            // P1ScoreText.text = (score++).ToString();
+
+            Destroy (other.gameObject);	    
 		}
+        else if(other.tag == "ammunation2")
+	    {
+	        FlyUp();
+	        // score = Int32.Parse(P2ScoreText.text);
+	        // P2ScoreText.text = (score++).ToString();
+            Destroy(other.gameObject);	        
+	    }
 	}
 
 	void FlyUp() {
@@ -37,9 +55,9 @@ public class FlyingObject : MonoBehaviour {
 			Destroy (transform.GetChild (0).gameObject);
 		}
 
-		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 400f, 0), 1.5f);
+		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 30f, 0), 0.2f);
 
-		if (transform.position.y == 400f) {
+		if (transform.position.y == 30f) {
 			Destroy (gameObject);
 			return;
 		}
