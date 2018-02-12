@@ -57,8 +57,13 @@ public class FlyingObject : MonoBehaviour {
 	}
 
 	void FlyUp() {
+		// If child count is larger than 0 then you find all children and 
+		// destroy them leaving only the flying object
 		if (transform.childCount > 0) {
-			Destroy (transform.GetChild (0).gameObject);
+			Transform[] children = GetComponentsInChildren<Transform> ();
+			for (int i = 1; i < children.Length; i++) {
+				Destroy (children[i].gameObject);
+			}
 		}
 
 		transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 30f, 0), 0.2f);
