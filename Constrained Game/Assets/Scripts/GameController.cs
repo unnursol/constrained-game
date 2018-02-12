@@ -95,18 +95,37 @@ public class GameController : MonoBehaviour
 
     public void HarvestPotatoes(int player)
     {
-
+        if (player == 1)
+        {
+            foreach (Transform crop in p1crops.transform)
+                crop.gameObject.GetComponent<FieldPotato>().Harvest();
+        }
+        else if (player == 2)
+        {
+            foreach (Transform crop in p2crops.transform)
+                crop.gameObject.GetComponent<FieldPotato>().Harvest();
+        }
     }
 
     public void WaterPotatoes(int player)
     {
+        if(player == 1)
+        {
+            foreach (Transform crop in p1crops.transform)
+                crop.gameObject.GetComponent<FieldPotato>().levelUp();
+        }
+        else if (player == 2)
+        {
+            foreach (Transform crop in p2crops.transform)
+                crop.gameObject.GetComponent<FieldPotato>().levelUp();
+        }
 
     }
 
     private void UpdateTimer()
     {
         float t = Time.time - startTime;
-        if (t >= 120)
+        if (t >= 120 || (p1score >= 50 || p2score >= 50))
         {
             UnityEngine.Debug.Log(t);
             Time.timeScale = 0;

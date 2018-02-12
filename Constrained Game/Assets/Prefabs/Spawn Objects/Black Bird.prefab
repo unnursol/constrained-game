@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 82786447723849170}
   m_Layer: 0
   m_Name: Black Bird
-  m_TagString: Untagged
+  m_TagString: bag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

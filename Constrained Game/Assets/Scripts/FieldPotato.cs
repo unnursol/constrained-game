@@ -56,10 +56,6 @@ public class FieldPotato : MonoBehaviour {
             collider.enabled = true;
         }
 
-        if(level == maxLevel)
-        {
-            Harvest();
-        }
 	}
 
 	public void levelUp(){
@@ -100,9 +96,12 @@ public class FieldPotato : MonoBehaviour {
         }
     }
 
-    void Harvest()
+    public void Harvest()
     {
-        gameController.HarvestPotato(player);
-        levelZero();
+        if(level == maxLevel)
+        {
+            gameController.HarvestPotato(player);
+            levelZero();
+        }    
     }
 }
