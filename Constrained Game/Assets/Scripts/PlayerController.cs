@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 	public float maxUpRotation;			// Maximum up rotation for cannon
 	public float maxDownRotation;		// Maximum down rotation for cannon
 	[Space(10)]
-	public float move;					// How fast should the cannon move, negative for player on left side of 
+	public float move;					// How fast should the cannon move, negative for player on left side of
 	// screen and positive for player on right side of screen
 
 	[Header("Ammunation")]
@@ -80,6 +80,10 @@ public class PlayerController : MonoBehaviour {
 	{
 
 	    ForceIndicatorHandler();
+			if (increaseForce)
+				IncreaseForce ();
+			else
+				DecreaseForce ();
 
 		if (Input.GetKey (down)) {
 			if (cannonMovementCount != maxDownRotation) {
@@ -92,10 +96,7 @@ public class PlayerController : MonoBehaviour {
 				cannonMovementCount -= Mathf.Abs(move);
 			}
 		} else if (Input.GetKey (shoot)) {
-			if (increaseForce) 
-				IncreaseForce ();
-			else 
-				DecreaseForce ();
+
 			forceText.text = "Force: " + shootingForce;
 		} else if (Input.GetKeyUp (shoot)) {
 			Fire ();
@@ -112,7 +113,7 @@ public class PlayerController : MonoBehaviour {
 		else if (currentSecondsAtMaxForce > 0f) {
 			currentSecondsAtMaxForce -= Time.deltaTime;
 			if (currentSecondsAtMaxForce < 0f) {
-				increaseForce = false;	
+				increaseForce = false;
 			}
 		}
 	}
@@ -126,7 +127,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Fire() {
-        
+
         anim.SetTrigger("Shoot");
 
 		// Create the Potato from the Potato Prefab
@@ -168,6 +169,6 @@ public class PlayerController : MonoBehaviour {
         for (int i = 0; i < forceCirclesCount; i++)
         {
             forceCircles.Add(forceIndicator.GetChild(i).GetComponent<Renderer>());
-        } 
+        }
     }
 }
