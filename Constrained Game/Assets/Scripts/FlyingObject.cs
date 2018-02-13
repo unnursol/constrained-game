@@ -10,6 +10,8 @@ public class FlyingObject : MonoBehaviour {
 	private float[] spawnPlacement =  {40f, -40f};
 	private float placement;
     private GameController gameController;
+    public GameObject harvestParticle;
+    private bool hit;
 
     void Awake ()
     {
@@ -43,7 +45,8 @@ public class FlyingObject : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "ammunation1") {
+		if (!hit && other.tag == "ammunation1") {
+            hit = true;
 			if (GetComponent<AudioSource> ()) {
 				GetComponent<AudioSource> ().Play ();
 			}
@@ -52,6 +55,7 @@ public class FlyingObject : MonoBehaviour {
             if(tag == "bag")
             {
                 gameController.HarvestPotato(1);
+                Instantiate(harvestParticle, new Vector3(transform.position.x, transform.position.y, -3), Quaternion.identity);
             }
             else if(tag == "shovel")
             {
@@ -64,9 +68,10 @@ public class FlyingObject : MonoBehaviour {
             
             Destroy (other.gameObject);	    
 		}
-        else if(other.tag == "ammunation2")
+        else if(!hit && other.tag == "ammunation2")
 	    {
-			if (GetComponent<AudioSource> ()) {
+            hit = true;
+            if (GetComponent<AudioSource> ()) {
 				GetComponent<AudioSource> ().Play ();
 			}
 	        FlyUp();
@@ -75,6 +80,7 @@ public class FlyingObject : MonoBehaviour {
             if (tag == "bag")
             {
                 gameController.HarvestPotato(2);
+                Instantiate(harvestParticle, new Vector3(transform.position.x, transform.position.y, -3), Quaternion.identity);
             }
             else if (tag == "shovel")
             {

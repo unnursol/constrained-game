@@ -15,6 +15,8 @@ public class FieldPotato : MonoBehaviour {
     private Collider2D collider;
     private int player;
 
+    public GameObject harvestParticle;
+
     void Start(){
 
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
@@ -100,6 +102,7 @@ public class FieldPotato : MonoBehaviour {
     {
         if(level == maxLevel)
         {
+            Instantiate(harvestParticle, new Vector3(transform.position.x, transform.position.y, -3), Quaternion.identity);
             gameController.HarvestPotato(player);
             levelZero();
         }    
