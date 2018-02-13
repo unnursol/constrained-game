@@ -16,6 +16,7 @@ public class FieldPotato : MonoBehaviour {
     private int player;
 
     public GameObject harvestParticle;
+		public GameObject bombParticle;
 
     void Start(){
 
@@ -88,11 +89,13 @@ public class FieldPotato : MonoBehaviour {
     {
         if (other.tag == "ammunation1" && player == 2)
         {
+						Instantiate(bombParticle, new Vector3(transform.position.x, transform.position.y, -3), Quaternion.identity);
             levelZero();
             Destroy(other.gameObject);
         }
         else if (other.tag == "ammunation2" && player == 1)
         {
+						Instantiate(bombParticle, new Vector3(transform.position.x, transform.position.y, -3), Quaternion.identity);
             levelZero();
             Destroy(other.gameObject);
         }
@@ -105,6 +108,6 @@ public class FieldPotato : MonoBehaviour {
             Instantiate(harvestParticle, new Vector3(transform.position.x, transform.position.y, -3), Quaternion.identity);
             gameController.HarvestPotato(player);
             levelZero();
-        }    
+        }
     }
 }
