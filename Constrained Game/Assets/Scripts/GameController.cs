@@ -31,6 +31,9 @@ public class GameController : MonoBehaviour
     public GameObject p1crops;
     public GameObject p2crops;
 
+    public GameObject rainObj;
+    private Rain rain;
+
 
 
     [Header("Win Screen Variables")]
@@ -45,6 +48,11 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        if (rainObj != null)
+        {
+            rain = rainObj.GetComponent<Rain>();
+        }
+
         Time.timeScale = 0;
         startTime = Time.time;
         startGame = false;
@@ -111,15 +119,16 @@ public class GameController : MonoBehaviour
     {
         if(player == 1)
         {
+            rain.RainRightOn();
             foreach (Transform crop in p1crops.transform)
                 crop.gameObject.GetComponent<FieldPotato>().levelUp();
         }
         else if (player == 2)
         {
+            rain.RainLeftOn();
             foreach (Transform crop in p2crops.transform)
                 crop.gameObject.GetComponent<FieldPotato>().levelUp();
         }
-
     }
 
     private void UpdateTimer()

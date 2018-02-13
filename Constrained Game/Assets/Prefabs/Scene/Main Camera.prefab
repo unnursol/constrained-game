@@ -155,7 +155,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -193,10 +193,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
   startTime: 0
-  player1score: 0
-  player2score: 0
+  p1score: 0
+  p2score: 0
   p1ScoreText: {fileID: 0}
   p2ScoreText: {fileID: 0}
+  p1Bag: {fileID: 0}
+  p2Bag: {fileID: 0}
+  smallPotato: {fileID: 0}
+  p1crops: {fileID: 0}
+  p2crops: {fileID: 0}
+  rainObj: {fileID: 0}
+  winner: {fileID: 0}
+  message: {fileID: 0}
   startScreen: {fileID: 0}
   endScreen: {fileID: 0}
   winScreen: {fileID: 0}
