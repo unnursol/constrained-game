@@ -190,6 +190,6 @@ public class GameController : MonoBehaviour
             message.text = "You have the upper hand and control the market price of potatoes, lowering it until " + looser + " goes out of business. " +
                            "You now have potato monopoly and make millions! " +
                            "" + looser + " asks you for a job which you happily give him.... as a butler.";
-        }     
+        }
     }
 }
