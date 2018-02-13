@@ -231,89 +231,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 3916411}
---- !u!1001 &4950153
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 212740874449527286, guid: 69c22af2d8d03a1419c3db706b03f96e,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212740874449527286, guid: 69c22af2d8d03a1419c3db706b03f96e,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212740874449527286, guid: 69c22af2d8d03a1419c3db706b03f96e,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4844705137175204, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212740874449527286, guid: 69c22af2d8d03a1419c3db706b03f96e,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212912950052724442, guid: 69c22af2d8d03a1419c3db706b03f96e,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4345001226758236, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927252209277010, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4873470640613146, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.27
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &34956734
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +287,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &34956737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -681,6 +599,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &134062088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1028,6 +947,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &199105687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1259,6 +1179,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &215768722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1980,6 +1901,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &547301792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2346,6 +2268,48 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 656110472}
+--- !u!1001 &670296211
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4236509895937234, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &671638247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,6 +2478,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &690757183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2687,6 +2652,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &704034277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3153,6 +3119,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &826815570
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3826,6 +3793,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1027821766
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3954,6 +3922,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1054123301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4206,6 +4175,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1119814259
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4524,6 +4494,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1159017683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4676,6 +4647,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1165165049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5092,6 +5064,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1313741547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5796,6 +5769,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1501446248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6113,6 +6087,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1568826414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6240,6 +6215,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1586844342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6785,6 +6761,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1696076617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7402,6 +7379,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1752670236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7830,6 +7808,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1869294177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7958,6 +7937,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1884492215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8111,6 +8091,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1906827588
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8336,6 +8317,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1932449919
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8533,6 +8515,7 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
+  bombParticle: {fileID: 0}
 --- !u!61 &1960275358
 BoxCollider2D:
   m_ObjectHideFlags: 0
