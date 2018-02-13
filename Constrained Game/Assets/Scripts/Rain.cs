@@ -36,6 +36,7 @@ public class Rain : MonoBehaviour {
 
     public void RainRightOn()
     {
+		GetComponent<AudioSource> ().Play ();
         rainRightOn = true;
         lastUpdateRight = Time.time;
         rainRight.SetActive(true);
@@ -43,6 +44,7 @@ public class Rain : MonoBehaviour {
 
     public void RainLeftOn()
     {
+		GetComponent<AudioSource> ().Play ();
         rainLeftOn = true;
         lastUpdateLeft = Time.time;
         rainLeft.SetActive(true);
