@@ -287,7 +287,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &34956737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -599,7 +600,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &134062088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -947,7 +949,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &199105687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1179,7 +1182,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &215768722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1975,7 +1979,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &547301792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2381,6 +2386,150 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4844705137175204, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 212141782268541578, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212256059870836112, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212094710143350984, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212390906209256674, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212684179824990440, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212911081228115420, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212302833941686178, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212279468083713252, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212017732073348200, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212286293923641464, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212528464965947926, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212716758746773426, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212627932550718654, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212337783657390688, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 212141782268541578, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212256059870836112, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212094710143350984, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212390906209256674, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212684179824990440, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212911081228115420, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212302833941686178, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212279468083713252, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212017732073348200, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212286293923641464, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212528464965947926, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212716758746773426, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212627932550718654, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
+    - target: {fileID: 212337783657390688, guid: 69c22af2d8d03a1419c3db706b03f96e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.903
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69c22af2d8d03a1419c3db706b03f96e, type: 2}
   m_IsPrefabParent: 0
@@ -2552,7 +2701,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &690757183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2726,7 +2876,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &704034277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3193,7 +3344,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &826815570
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3868,7 +4020,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1027821766
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3997,7 +4150,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1054123301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4250,7 +4404,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1119814259
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4569,7 +4724,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1159017683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4722,7 +4878,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1165165049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5139,7 +5296,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1313741547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5706,6 +5864,24 @@ Prefab:
       propertyPath: spreadCustomCurve.m_RotationOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4779785774756424, guid: e0494924b9405694380c7a0bd8f78b6f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047141863067268, guid: e0494924b9405694380c7a0bd8f78b6f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 212266043390572548, guid: e0494924b9405694380c7a0bd8f78b6f,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212932448115134126, guid: e0494924b9405694380c7a0bd8f78b6f,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0494924b9405694380c7a0bd8f78b6f, type: 2}
   m_IsPrefabParent: 0
@@ -5844,7 +6020,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1501446248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6162,7 +6339,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1568826414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6290,7 +6468,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1586844342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6524,7 +6703,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 29821db8324231f4481e730bf6288b9c, type: 2}
     m_FontSize: 0
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
@@ -6836,7 +7015,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1696076617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7454,7 +7634,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1752670236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7964,7 +8145,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1869294177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8093,7 +8275,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1884492215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8247,7 +8430,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1906827588
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8473,7 +8657,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1932449919
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8671,7 +8856,8 @@ MonoBehaviour:
   growUpdateTime: 4
   harvestParticle: {fileID: 1578106051398008, guid: 52fadd1a27eef504f952f1779e1fb5fa,
     type: 2}
-  bombParticle: {fileID: 0}
+  bombParticle: {fileID: 1556773236935936, guid: c3c09ea93fa41c94495131c493d8646a,
+    type: 2}
 --- !u!61 &1960275358
 BoxCollider2D:
   m_ObjectHideFlags: 0
