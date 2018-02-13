@@ -80,22 +80,35 @@ public class PlayerController : MonoBehaviour {
 	{
 
 	    ForceIndicatorHandler();
-			if (increaseForce)
-				IncreaseForce ();
-			else
-				DecreaseForce ();
 
 		if (Input.GetKey (down)) {
 			if (cannonMovementCount != maxDownRotation) {
 				cannon.Rotate (0, 0, move);
 				cannonMovementCount += Mathf.Abs(move);
 			}
+			if(Input.GetKey (shoot)) {
+				if (increaseForce)
+					IncreaseForce ();
+				else
+					DecreaseForce ();
+			}
 		} else if (Input.GetKey (up)) {
+
 			if (cannonMovementCount != maxUpRotation) {
 				cannon.Rotate (0, 0, -move);
 				cannonMovementCount -= Mathf.Abs(move);
 			}
+			if(Input.GetKey (shoot)) {
+				if (increaseForce)
+					IncreaseForce ();
+				else
+					DecreaseForce ();
+			}
 		} else if (Input.GetKey (shoot)) {
+			if (increaseForce)
+				IncreaseForce ();
+			else
+				DecreaseForce ();
 
 			forceText.text = "Force: " + shootingForce;
 		} else if (Input.GetKeyUp (shoot)) {
