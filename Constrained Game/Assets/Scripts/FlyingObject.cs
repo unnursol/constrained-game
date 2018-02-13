@@ -78,11 +78,11 @@ public class FlyingObject : MonoBehaviour {
             }
             else if (tag == "shovel")
             {
-                gameController.HarvestPotatoes(1);
+                gameController.HarvestPotatoes(2);
             }
             else if (tag == "water")
             {
-                gameController.WaterPotatoes(1);
+                gameController.WaterPotatoes(2);
             }
 
             Destroy(other.gameObject);	        
