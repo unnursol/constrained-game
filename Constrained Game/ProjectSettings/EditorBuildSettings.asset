@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Sigrun Playground.unity
-    guid: bfae57d03f60f8348bfc651bbb64c9aa
+    path: Assets/Scenes/Main Scene.unity
+    guid: 077d272c6261bdb4ba3b2fc064658c47

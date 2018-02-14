@@ -75,7 +75,6 @@ public class FlyingObject : MonoBehaviour {
 				GetComponent<AudioSource> ().Play ();
 			}
 	        FlyUp();
-            gameController.p2score++;
 
             if (tag == "bag")
             {
